@@ -31,6 +31,8 @@ class MainActivity : AppCompatActivity() {
 
         val text = findViewById<TextView>(R.id.text)
 
+        Log.d("tetsu", "thread ${mainLooper.thread}")
+
         thread{
             Log.d("tetsu", "${Thread.currentThread()} thread sleep")
             Thread.sleep(10000)
