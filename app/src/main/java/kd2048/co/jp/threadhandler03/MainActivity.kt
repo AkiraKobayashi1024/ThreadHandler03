@@ -33,6 +33,7 @@ class MainActivity : AppCompatActivity() {
 
         Log.d("tetsu", "thread ${mainLooper.thread}")
 
+        // 
         thread{
             Log.d("tetsu", "${Thread.currentThread()} thread sleep")
             Thread.sleep(10000)
